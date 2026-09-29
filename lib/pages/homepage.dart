@@ -59,7 +59,36 @@ const HomePage({super.key});
           SliverAppBar(
             backgroundColor: Colors.deepPurple,
             expandedHeight: 200,
-            
+            flexibleSpace: FlexibleSpaceBar(
+              titlePadding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+              centerTitle: false,
+              background: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "5470 Birr",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 36,
+                      fontWeight: FontWeight.bold
+                    ),
+                    ),
+                    Text(
+                      "current balance",
+                      style: TextStyle(
+                        color: Colors.white70,
+                        fontSize: 16,
+                      ),
+                      )
+                ],
+              ),
+              title: Text(
+                "Wallet",
+                style: TextStyle(
+                  color: Colors.white
+                ),
+                ),
+            ),
           )
         ],
       ),
