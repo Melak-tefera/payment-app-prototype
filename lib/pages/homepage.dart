@@ -93,6 +93,8 @@ const HomePage({super.key});
           SliverAppBar(
             backgroundColor: Colors.white,
             expandedHeight: 140,
+            toolbarHeight: 140,
+            pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               background: Padding(
                 padding: EdgeInsetsGeometry.all(16),
@@ -109,8 +111,45 @@ const HomePage({super.key});
                     ),
                     SizedBox(height: 10,),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
+                        Column(
+                          children: [
+                            CircleAvatar(
+                              backgroundColor: Colors.deepPurple.withOpacity(0.1),
+                              radius: 30,
+                              child: Icon(Icons.send, color: Colors.deepPurple, size: 30,),
+                            ),
+                            SizedBox(height: 8,),
+                            Text("Send", style: TextStyle(fontSize: 14),)
+                          ],
+                        ),
+
+                        Column(
+                          children: [
+                            CircleAvatar(
+                              backgroundColor: Colors.deepPurple.withOpacity(0.1),
+                              radius: 30,
+                              child: Icon(Icons.receipt, color: Colors.deepPurple, size: 30,),
+                            ),
+                            SizedBox(height: 8,),
+                            Text("Request", style: TextStyle(fontSize: 14),)
+                          ],
+                        ),
+
+                        Column(
+                          children: [
+                            CircleAvatar(
+                              backgroundColor: Colors.deepPurple.withOpacity(0.1),
+                              radius: 30,
+                              child: Icon(Icons.add, color: Colors.deepPurple, size: 30,),
+                            ),
+                            SizedBox(height: 8,),
+                            Text("Top up", style: TextStyle(fontSize: 14),)
+                          ],
+                        ),
                         
+
                       ],
                     )
 
@@ -119,6 +158,27 @@ const HomePage({super.key});
                 ),
             ),
           ),
+
+          SliverToBoxAdapter(
+            child: Padding(
+              padding:EdgeInsetsGeometry.all(16),
+              child: Text(
+                "Recent transaction",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+                ),
+              ),
+          ),
+          SliverList(
+            delegate: SliverChildBuilderDelegate(
+              (context,index){
+                return Card();
+              }
+            ),
+            ),
+
         ],
       ),
     
