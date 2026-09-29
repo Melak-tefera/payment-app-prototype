@@ -30,11 +30,24 @@ const HomePage({super.key});
                               ),
                               ),
                               SizedBox(height: 5,),
-                            Text("abelom"),
+                            Text(
+                              "abelom",
+                              style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold
+                              ),
+                              ),
                     
                           ],
                         ),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.notifications_none))
+                        IconButton(
+                          onPressed: (){}, 
+                          icon: Icon(
+                            Icons.notifications_none,
+                            size: 35,
+                            color: Colors.black,
+                            )
+                          )
 
                       ],
                     ),
