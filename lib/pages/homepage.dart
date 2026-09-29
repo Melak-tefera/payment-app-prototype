@@ -89,7 +89,17 @@ const HomePage({super.key});
                 ),
                 ),
             ),
-          )
+          ),
+          SliverAppBar(
+            backgroundColor: Colors.white,
+            expandedHeight: 140,
+            flexibleSpace: FlexibleSpaceBar(
+              background: Padding(
+                padding: EdgeInsetsGeometry.all(16),
+                
+                ),
+            ),
+          ),
         ],
       ),
     
