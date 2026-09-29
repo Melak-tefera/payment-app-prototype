@@ -55,6 +55,11 @@ const HomePage({super.key});
                 ),
                 ),
             ),
+          ),
+          SliverAppBar(
+            backgroundColor: Colors.deepPurple,
+            expandedHeight: 200,
+            
           )
         ],
       ),
