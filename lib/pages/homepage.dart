@@ -22,7 +22,13 @@ const HomePage({super.key});
                       children: [
                         Column(
                           children: [
-                            Text("Welcome back"),
+                            Text(
+                              "Welcome back",
+                              style: TextStyle(
+                                fontSize: 18,
+                              ),
+                              ),
+                              SizedBox(height: 5,),
                             Text("abelom"),
                     
                           ],
