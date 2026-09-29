@@ -96,7 +96,26 @@ const HomePage({super.key});
             flexibleSpace: FlexibleSpaceBar(
               background: Padding(
                 padding: EdgeInsetsGeometry.all(16),
-                
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Quick actions",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black87,
+                      ),
+                    ),
+                    SizedBox(height: 10,),
+                    Row(
+                      children: [
+                        
+                      ],
+                    )
+
+                  ],
+                ),
                 ),
             ),
           ),
