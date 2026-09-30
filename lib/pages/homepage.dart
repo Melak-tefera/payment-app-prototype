@@ -174,7 +174,16 @@ const HomePage({super.key});
           SliverList(
             delegate: SliverChildBuilderDelegate(
               (context,index){
-                return Card();
+                return Card(
+                  elevation: 2,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadiusGeometry.circular(10),
+                  ),
+                  child: ListTile(
+                    leading: CircleAvatar(),
+                    
+                  ),
+                );
               }
             ),
             ),
